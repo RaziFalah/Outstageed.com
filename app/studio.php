@@ -23,7 +23,7 @@ echo'
   <div class="wrapper">
     <form class="form" action="../apis/post_api.php" method="post">
       <div class="pageTitle title">Hushh, someone is telling truth!</div>
-      <div  class="secondaryTitle title">Pick a title the design your mindset.</div>';
+      <div  class="secondaryTitle title">Pick a title and design your mindset.</div>';
       ?>
       <input type="text" class="name formEntry" name="title"  placeholder="Title" pattern="[^'\x22]+" require/>
       <input type="text" class="name formEntry" name="Description"  placeholder="Description" pattern="[^'\x22]+" require/>
