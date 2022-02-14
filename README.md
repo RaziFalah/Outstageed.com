@@ -11,3 +11,7 @@
 + app/connection.php
 + py_con/db.py
 ```
+
+```diff
++ root/.htaccess change localhost to the required domain
+```
