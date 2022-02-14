@@ -23,7 +23,7 @@ if(isset($_POST['submit'])) {
 if(mysqli_query($con, $sql)){
     header('Location: ../app');
 } else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($con);
+    header('Location: ../errors/sql_error.php');
 }
 
 
