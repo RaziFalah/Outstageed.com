@@ -7,7 +7,7 @@
 <h1>Config map</h1>
 
 ```diff
-! api/db.php
-! app/connection.php
-! py_con/db.py
++ api/db.php
++ app/connection.php
++ py_con/db.py
 ```
