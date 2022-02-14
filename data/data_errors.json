@@ -1,0 +1,6 @@
+{ "Error_codes" :
+    {
+        "sql_error": "The user tried to submit a form but the error has occurred, reason maybe illegal input.",
+        " existence=0_error": "Article doesn't exists"
+    }
+}
