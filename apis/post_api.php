@@ -19,7 +19,7 @@ if(mysqli_query($con, $sql)){
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($con);
 }
  
-
+// Close connection
 mysqli_close($con);
 }
 ?>
