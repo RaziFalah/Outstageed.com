@@ -27,6 +27,7 @@ echo'
       ?>
       <input type="text" class="name formEntry" name="title"  placeholder="Title" pattern="[^'\x22]+" require/>
       <input type="text" class="name formEntry" name="Description"  placeholder="Description" pattern="[^'\x22]+" require/>
+      <input type="file" class="name formEntry" name="fileToUpload" id="fileToUpload">
       <?php
       echo'
       <select style="color:black" class="option formEntry" name="option" require>
