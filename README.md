@@ -1,3 +1,8 @@
+```diff
+- Note: this repo is under GNU General Public License v3.0 LICENSE which means any external use is highly forbidden
+Made by razifalah.com
+```
+
 <h1>Notes:</h1>
 
 ```diff
