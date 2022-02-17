@@ -1,6 +1,6 @@
 <span style="color: red;">
   <h1>
-Note: this repo is under GNU General Public License v3.0 LICENSE which means any external use is highly forbidden
+Note: this repo is under GNU General Public License v3.0 LICENSE which means any external use is highly forbidden <br>
 Made by razifalah.com
     </h1>
 </span>
