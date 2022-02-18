@@ -40,12 +40,8 @@ $records = mysqli_query($con,$im);
 start:
 $i=0;
 while($result = mysqli_fetch_assoc($records)){
-echo'
-
-  '.$result['content'].'
-
-
-';
+$frame = $result['ifram'];
+header("Location: ../screens/$frame");
 if ($i==4) {
 
     goto start; 
