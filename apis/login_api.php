@@ -45,7 +45,7 @@
                 <style>
                 .login-dark {
                 height:1000px;
-                background:#475d62 url(images/index.png);
+                background:#475d62 url(images/1.png);
                 background-size:cover;
                 position:relative;
                 }
@@ -138,7 +138,7 @@ echo'
 <style>
 .login-dark {
 height:1000px;
-background:#475d62 url(images/index.png);
+background:#475d62 url(images/1.png);
 background-size:cover;
 position:relative;
 }
