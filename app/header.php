@@ -29,7 +29,7 @@
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../images/index.png");
+  background-image: url("../images/1.png");
 }
 
 .header {

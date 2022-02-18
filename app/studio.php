@@ -19,7 +19,7 @@ include "header.php";
 
 <?php
 echo'
-<body>
+<body style="overflow: scroll;overflow-x: hidden;">
   <div class="wrapper">
     <form class="form" action="../apis/post_api.php" method="post">
       <div class="pageTitle title">Hushh, someone is telling truth!</div>
@@ -71,7 +71,7 @@ echo'
 </html>
 <style>
     body {
-        background-image: url("../images/index.png");
+        background-image: url("../images/1.png");
 }
 
 #title-Tag-Line {
