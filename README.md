@@ -1,4 +1,12 @@
-[Visit deployment page](https://razifalah.github.io/Outstageed.com/)
+<h1>What is outstageed?</h1>
+Outstageed is a project that aims on the unexplained cases in life, for example the real truth of who people existed, this things that never had a reasonable explaning.
+
+Outstageed works by letting everyone publish thier theroies on this cases, becuase someone out thier may really have a strong explaning but don't have the voice to let it reach the destination
+
+<br>
+
+
+[Visit deployment page for more info](https://razifalah.github.io/Outstageed.com/)
 Project is indevelopment by razifalah.com Team
 
 <span style="color: red;">
