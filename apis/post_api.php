@@ -1,4 +1,5 @@
 <?php
+$domain = "outstaged.com";
 include "db.php";
 include "auth_api.php";
 if(isset($_POST['submit'])) {
@@ -65,7 +66,7 @@ $contentmore =
      overflow-x: hidden;
 	 width: 100%;
 	 height: 100%;
-	 background-color: #101b37;
+	 background-color: white;
 	 display: grid;
 	 place-items: center;
 }
@@ -130,7 +131,7 @@ $contentmore =
  .headline {
 	 position: relative;
 	 font-size: 2.5rem;
-	 color: white;
+	 color: black;
 	 text-shadow: 0 0 0.5em #4deeea, 0 0 1em white;
 	 border-top: 0.6rem solid #4deeea;
 	 border-right: 0.6rem solid #74ee15;
@@ -153,7 +154,7 @@ $contentmore =
 	 position: relative;
 	 margin-bottom: 1em;
 	 text-shadow: none;
-	 color: white;
+	 color: black;
 	 padding: 1em;
 	 border-left: 0.6rem solid #ffe700;
 	 font-family: "Open Sans", sans-serif;
@@ -209,6 +210,7 @@ $contentmore =
 }
  .byline {
 	 font-weight: bold;
+     color: black;
 }
  .article-tags {
 	 margin-top: 2em;
@@ -284,7 +286,7 @@ $contentmore =
 				</svg>
 				<div class="author__info">
 					<p class="byline">By: '.$username.'</p>
-					<p class="dateline">Posted in: '.$timed.'</p>
+					<p class="dateline" style="color:black;">Posted in: '.$timed.'</p>
 				</div>
 			</div>
 			<p class="article-tags">
@@ -305,4 +307,15 @@ $contentmore =
 $fp = fopen("../screens/".$filename, 'w');
 fwrite($fp, $contentmore);
 fclose($fp);
+
+$map = '
+<sitemap>
+<loc>https://'.$domain.'/screens/'.$token.'</loc>
+</sitemap>
+
+';
+
+$fpa = fopen("../sitemap.xml", 'a');
+fwrite($fpa, $map);
+fclose($fpa);
 ?>
