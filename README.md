@@ -22,3 +22,9 @@ Made by razifalah.com
 ```diff
 + root/.htaccess change localhost to the required domain
 ```
+
+<h1>DataBases</h1>
+
+```diff
++ /databases/system.sql [System/Main databaes] #test row included!
+```
