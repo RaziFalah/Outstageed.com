@@ -1,3 +1,6 @@
+[Visit deployment page](https://razifalah.github.io/Outstageed.com/)
+Project is indevelopment by razifalah.com Team
+
 <span style="color: red;">
   <h1>
 Note: this repo is under GNU General Public License v3.0 LICENSE which means any external use is highly forbidden <br>
