@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/92949627/154862834-f33bf9b3-05a6-4ff3-879f-2436c29c99d5.png)
 <h1>What is outstageed?</h1>
 Outstageed is a project that aims on the unexplained cases in life, for example the real truth of how people existed, this things that never had a reasonable explanation.
 
