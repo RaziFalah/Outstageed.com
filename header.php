@@ -84,7 +84,7 @@ body {
 <body>
 
 <div class="header">
-  <a href="#default" class="logo">Unamed</a>
+  <a href="#default" class="logo">Outstageed.com</a>
   <div class="header-right">
     <a href="login.php">login</a>
     <a href="contact.php">Contact</a>
