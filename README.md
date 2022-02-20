@@ -1,8 +1,7 @@
 <h1>What is outstageed?</h1>
-Outstageed is a project that aims on the unexplained cases in life, for example the real truth of who people existed, this things that never had a reasonable explaning.
+Outstageed is a project that aims on the unexplained cases in life, for example the real truth of how people existed, this things that never had a reasonable explanation.
 
-Outstageed works by letting everyone publish thier theroies on this cases, becuase someone out thier may really have a strong explaning but don't have the voice to let it reach the destination
-
+Outstageed works by letting everyone publish thier theories on this cases, becuase someone out thier may really have a strong explaning but don't have the voice to let it reach the destination
 <br>
 
 
