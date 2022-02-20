@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black hole | by razifa</title>
+    <meta name="Description" CONTENT="Author: razifa. Author, Illustrator: P. Picture, Category: Space-Science, Length: 1 pages">
+    <meta property="og:title" content="Black hole" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="razifa2022-02-20110620.png" />
+</head>
+<body>
+    
+
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+ *, ::before, ::after {
+	 padding: 0;
+	 margin: 0;
+	 box-sizing: border-box;
+}
+ body {
+     overflow-x: hidden;
+	 width: 100%;
+	 height: 100%;
+	 background-color: white;
+	 display: grid;
+	 place-items: center;
+}
+ h1, h2, h3, h4, h5, h6 {
+	 font-family: "Audiowide", sans-serif;
+	 letter-spacing: 0.1em;
+}
+ h2 {
+	 color: white;
+	 text-shadow: 0 0 0.5em #4deeea, 0 0 1em white;
+	 padding: 1em 0 0.5em 0;
+}
+ figure {
+	 display: flex;
+	 position: relative;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 margin: 1em 0;
+}
+ figure img {
+	 object-fit: contain;
+	 width: 100%;
+	 max-width: 400px;
+	 height: auto;
+	 border-radius: 0 0.5em 0.5em 0;
+	 box-shadow: -0.5em 0.5em 0 #74ee15;
+}
+ figure figcaption {
+	 position: absolute;
+	 font-family: "Open Sans", sans-serif;
+	 padding: 0.4em;
+	 font-size: 0.8rem;
+	 color: black;
+	 font-weight: bold;
+	 background-color: #ffe700;
+	 border-radius: 0.5em;
+	 bottom: -1em;
+}
+ p {
+	 font-family: "Open Sans", sans-serif;
+	 line-height: 2em;
+	 padding: 0.5em 0;
+}
+ .main {
+	 color: #fff;
+	 position: relative;
+	 max-width: 800px;
+}
+ @media screen and (min-width: 800px) {
+	 .main {
+		 border-left: 0.1em solid white;
+	}
+}
+ .head {
+	 position: relative;
+	 padding: 1.5em;
+	 margin-bottom: 1em;
+	/*background: linear-gradient( 0deg, rgba(16, 27, 55, 1) 32%, rgba(0, 0, 0, 1) 100% );
+	*/
+}
+ .headline {
+	 position: relative;
+	 font-size: 2.5rem;
+	 color: black;
+	 text-shadow: 0 0 0.5em #4deeea, 0 0 1em white;
+	 border-top: 0.6rem solid #4deeea;
+	 border-right: 0.6rem solid #74ee15;
+	 border-bottom: 0.6rem solid magenta;
+	 border-radius: 0 1rem 1rem 0;
+	 padding: 0.8em 0em;
+	 text-transform: uppercase;
+}
+ .headline::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 top: -1.05rem;
+	 left: -0.25rem;
+}
+ .subhead {
+	 position: relative;
+	 margin-bottom: 1em;
+	 text-shadow: none;
+	 color: black;
+	 padding: 1em;
+	 border-left: 0.6rem solid #ffe700;
+	 font-family: "Open Sans", sans-serif;
+}
+ .subhead::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #ffe700;
+	 bottom: -0.35rem;
+	 left: -1.05rem;
+}
+ .article-meta {
+	 display: grid;
+	 flex-direction: column;
+}
+ .author {
+	 position: relative;
+	 display: flex;
+	 align-items: center;
+	 padding: 1em;
+	 border-left: 0.6rem solid #001eff;
+}
+ .author::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #001eff;
+	 top: -0.7rem;
+	 left: -1.05rem;
+}
+ .author::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #001eff;
+	 bottom: -0.7em;
+	 left: -1.05em;
+}
+ .author__info {
+	 display: flex;
+	 flex-direction: column;
+	 margin-left: 1em;
+}
+ .author__info p {
+	 padding: 0;
+}
+ .byline {
+	 font-weight: bold;
+     color: black;
+}
+ .article-tags {
+	 margin-top: 2em;
+	 padding: 0;
+}
+ .article-tags span {
+	 padding: 0.5em 1em;
+	 background-color: black;
+	 border-radius: 1em;
+}
+ .content {
+	 padding: 1em 1.5em;
+	 justify-self: center;
+}
+ aside {
+	 position: relative;
+	 font-style: italic;
+	 color: white;
+	 margin: 1.5em 0;
+	 padding-left: 1em;
+	 border-left: 0.6rem solid #4deeea;
+	 text-align: left;
+}
+ aside::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 top: -0.7rem;
+	 left: -1.05rem;
+}
+ aside::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 bottom: -0.7em;
+	 left: -1.05em;
+}
+</style>
+ 
+
+<div class="main">
+	<div class="head">
+		<h1 class="headline">Black hole</h1>
+		<h2 class="subhead">
+			What are black holes? Facts, theory & definition
+		</h2>
+		<div class="article-meta">
+			<div class="author">
+				<svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+					<title id="avatarTitle">Author Avatar</title>
+					<desc id="avatarDesc">
+						A cartoon avatar of a smiling purple square on a blue
+						background.
+					</desc>
+					<mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+						<rect width="36" height="36" rx="72" fill="white"></rect>
+					</mask>
+					<g mask="url(#mask__beam)">
+						<rect width="36" height="36" fill="#0ebeff"></rect>
+						<rect x="0" y="0" width="36" height="36" transform="translate(6 6) rotate(192 18 18) scale(1)" fill="#754cac" rx="6"></rect>
+						<g transform="translate(0 2) rotate(-2 18 18)">
+							<path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+							<rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+							<rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+						</g>
+					</g>
+				</svg>
+				<div class="author__info">
+					<p class="byline">By: razifa</p>
+					<p class="dateline" style="color:black;">Posted in: 2022/02/20</p>
+				</div>
+			</div>
+			<p class="article-tags">
+				<span class="tag">Space-Science</span>
+			</p>
+		</div>
+	</div>
+	<div class="content">
+		<header id="isPasted" style='margin: 30px 1.5em 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; line-height: inherit; font-family: "Open Sans", Arial, sans-serif; font-size: 16px; vertical-align: baseline; display: block; overflow: visible; color: rgb(51, 51, 51); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><header id="isPasted" style='margin: 30px 1.5em 0px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; line-height: inherit; font-family: "Open Sans", Arial, sans-serif; font-size: 16px; vertical-align: baseline; display: block; overflow: visible; color: rgb(51, 51, 51); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><p id="isPasted" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>Black holes are points in space that are so dense they create deep gravity sinks. Beyond a certain region, not even light can escape the powerful tug of a black hole&#39;s gravity. And anything that ventures too close&mdash;be it star, planet, or spacecraft&mdash;will be stretched and compressed like putty in a theoretical process aptly known as spaghettification.</p><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>There are&nbsp;<a href="http://hubblesite.org/reference_desk/faq/answer.php.id=62&cat=exotic" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>four types of black holes</a>: stellar, intermediate, supermassive, and miniature. The most commonly known way a black hole forms is by stellar death. As stars reach the ends of their lives, most will inflate, lose mass, and then cool to form&nbsp;<a href="http://science.nationalgeographic.com/science/space/universe/white-dwarfs-article/" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>white dwarfs</a>. But the largest of these fiery bodies, those at least 10 to 20 times as massive as our own sun, are destined to become either super-dense&nbsp;<a href="http://science.nationalgeographic.com/science/space/solar-system/neutron-stars" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>neutron stars</a> or so-called stellar-mass black holes.</p><div style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; font-size: 19px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0.1px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;"><aside style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; display: block; margin: 24px auto; clear: both;"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;"><div data-meta-id="inline-1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; height: 0px; overflow: hidden; position: relative; padding-bottom: 357.75px; width: 636px;"><iframe allowfullscreen="" tabindex="-1" title="Video Player" src="about%3Ablank" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; display: block; margin: 0px auto; max-width: 100%; position: absolute !important; inset: 0px; border: none; width: 636px; height: 357.75px; opacity: 0; z-index: 2; transition: opacity 0.5s ease-in 0s; pointer-events: none;"></iframe><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; position: absolute !important; inset: 0px; opacity: 1; z-index: 1;"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; cursor: pointer; position: relative; background: rgb(51, 51, 51); width: 636px; height: 357.75px;" tabindex="-1"><figure style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; display: block; position: relative; margin: 0px; max-width: 100%; height: auto; overflow: hidden;"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; position: relative; overflow: hidden; padding-bottom: 357.75px;"><br></div><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; z-index: 2; position: absolute; inset: 0px; width: 636px;"><img data-fr-image-pasted="true" alt="" data-mptype="image" src="https://i.natgeofe.com/n/75f297b9-8227-4f2f-91ed-7291f5ad283d/00000165-edc9-d475-abe7-efc925a20000.jpg?w=636&h=358" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; border-style: none; width: auto; object-fit: contain; height: 357.75px;" class="fr-fic fr-dii"></div></figure><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: absolute !important; inset: 0px; pointer-events: none; z-index: 2;"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; display: flex; -webkit-box-align: center; align-items: center; position: absolute; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); border-radius: 8px; bottom: 12px; color: rgb(21, 22, 23); font-size: 11px; font-weight: 600; height: 16px; left: 12px; line-height: 1.18; padding: 0px 8px;">2:55</div></div><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; -webkit-box-align: center; align-items: center; inset: 0px; display: flex; -webkit-box-pack: center; justify-content: center; position: absolute; z-index: 4;"><br></div></div></div></div></div><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;"><div style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; font-family: GeoBrandRegular, CenturyGothic, AppleGothic, "Gill Sans", "Gill Sans MT", sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5; margin: 12px 0px 8px;'><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 0px 0px 8px; font-size: 15px; color: rgb(43, 44, 45); font-family: GeoBrandBold, CenturyGothic, AppleGothic, "Gill Sans", "Gill Sans MT", sans-serif; line-height: 20px; font-weight: 400; letter-spacing: 3px; display: block; text-transform: uppercase;'>BLACK HOLES 101</p><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;"><div style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; font-family: GeoEditRegular, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.5; display: inline; color: rgb(0, 0, 0); letter-spacing: 0.1px;'><span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; display: block; position: relative;"><span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit;"><span style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit;">At the center of our galaxy, a supermassive black hole churns. Learn about the types of black holes, how they form, and how scientists discovered these invisible, yet extraordinary objects in our universe.</span></span></span></div></div></div></div></div></aside></div></div></div><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>In their final stages, enormous stars go out with a bang in massive explosions known as&nbsp;<a href="http://science.nationalgeographic.com/science/space/universe/supernovae-article" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>supernovae.</a> Such a burst flings star matter out into space but leaves behind the stellar core. While the star was alive, nuclear fusion created a constant outward push that balanced the inward pull of gravity from the star&#39;s own mass. In the stellar remnants of a supernova, however, there are no longer forces to oppose that gravity, so the star core begins to collapse in on itself.</p><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>If its mass collapses into an infinitely small point, a black hole is born. Packing all of that bulk&mdash;many times the mass of our own sun&mdash;into such a tiny point gives black holes their powerful gravitational pull.&nbsp;<a href="https://news.nationalgeographic.com/2018/04/black-hole-stellar-binary-stars-milky-way-galaxy/" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>Thousands of these stellar-mass black holes</a> may lurk within our own Milky Way galaxy.</p><h2 style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 0px; font-family: GeoEditBold, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif; font-size: 24px; line-height: 1.214; font-weight: 400; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: 0.1px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><b style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; font-weight: 400; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.214; font-family: GeoEditBold, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif;'>One black hole is not like the others</b></h2><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>Supermassive black holes, predicted by Einstein&#39;s general theory of relativity, can have masses equal to billions of suns; these cosmic monsters likely hide at the centers of most galaxies. The Milky Way hosts its own supermassive black hole at its center known as&nbsp;<a href="https://news.nationalgeographic.com/2017/01/black-hole-spitballs-planets-galaxies-stars-space-science/" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>Sagittarius A*</a> (pronounced &ldquo;ay star&rdquo;) that is more than four million times as massive as our sun.</p><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>The tiniest members of the black hole family are, so far, theoretical. These small vortices of darkness may have swirled to life soon after the universe formed with the big bang, some 13.7 billion years ago, and then quickly evaporated. Astronomers also suspect that a class of objects called&nbsp;<a href="https://www.nasa.gov/mission_pages/chandra/images/cosmos-legacy-survey-shows-evidence-of-intermediate-mass-black-holes.html" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>intermediate-mass black holes</a> exist in the universe, although evidence for them is so far debatable.</p><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>No matter their starting size, black holes can grow throughout their lives, slurping gas and dust from any objects that creep too close. Anything that passes the event horizon, the point at which escape becomes impossible, is in theory destined for spaghettification thanks to a sharp increase in the strength of gravity as you fall into the black hole.</p><div style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; font-size: 19px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0.1px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><aside style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; display: block; margin: 24px auto; clear: both; position: relative;"><div data-height="auto" data-quiz="465525" data-width="100%" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; min-height: 1px; width: auto !important; height: auto !important;"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; height: 540px !important; width: 636px;"><iframe height="100%" width="100%" allowtransparency="false" allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.qzzr.com/widget/quiz/fi9xdWl6emVzLzQ2NTUyNT9zdGF0ZVtwX3VdPWh0dHBzJTNBJTJGJTJGd3d3Lm5hdGlvbmFsZ2VvZ3JhcGhpYy5jb20lMkZzY2llbmNlJTJGYXJ0aWNsZSUyRmJsYWNrLWhvbGVzJnN0YXRlW3JdPWh0dHBzJTNBJTJGJTJGd3d3Lmdvb2dsZS5jb20lMkY" title="undefined" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; display: block !important; margin: 0px !important; max-width: 100%; border: none; height: 540px; position: static; width: 636px;"></iframe></div></div></div></aside></div><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>As astrophysicist Neil Degrasse Tyson once&nbsp;<a href="https://www.youtube.com/watch?v=h1iJXOUMJpg" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>described</a> the process: &ldquo;While you&#39;re getting stretched, you&#39;re getting squeezed&mdash;extruded through the fabric of space like toothpaste through a tube.&rdquo;</p><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>But black holes aren&#39;t exactly &ldquo;<a href="http://hubblesite.org/reference_desk/faq/answer.php.id=61&cat=exotic" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>cosmic vacuum cleaners</a>,&rdquo; as often depicted in popular media. Objects must creep fairly close to one to lose this gravitational tug-of-war. For example, if our sun was suddenly replaced by a black hole of similar mass, our planetary family would continue to orbit unperturbed, if much less warm and illuminated.</p><h2 style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 0px; font-family: GeoEditBold, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif; font-size: 24px; line-height: 1.214; font-weight: 400; color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: 0.1px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><b style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: inherit; font-weight: 400; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.214; font-family: GeoEditBold, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Helvetica, Arial, sans-serif;'>Peering through the darkness</b></h2><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>Because black holes swallow all light, astronomers can&#39;t spot them directly like they do the many glittery cosmic objects in the sky. But there are a few keys that reveal a black hole&#39;s presence.</p><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>For one, a black hole&#39;s intense gravity tugs on any surrounding objects. Astronomers use these erratic movements to infer the presence of the invisible monster that lurks nearby. Or objects can orbit a black hole, and astronomers can look for stars that seem to orbit nothing to detect a likely candidate. That&#39;s how astronomers eventually&nbsp;<a href="http://www.nature.com/articles/nature01121" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>identified Sagittarius A* as a black hole</a> in the early 2000s.</p><p style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; margin: 12px 0px 24px; font-size: 19px; color: rgb(51, 51, 51); font-family: Georgia, "Times New Roman", Times, serif; line-height: 1.632; font-weight: 400; letter-spacing: 0.1px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>Black holes are also messy eaters, which often betrays their locations. As they sip on surrounding stars, their massive gravitational and magnetic forces superheat the infalling gas and dust, causing it to emit radiation. Some of this glowing matter envelops the black hole in a whirling region called an accretion disk. Even the matter that starts falling into a black hole isn&#39;t necessarily there to stay. Black holes can sometimes eject infalling&nbsp;<a href="https://news.nationalgeographic.com/news/2011/06/110615-black-holes-eat-star-galaxy-nasa-swift-gamma-rays-space-science/" style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box; background-color: transparent; text-decoration: none; font-family: Georgia, "Times New Roman", Times, serif; line-height: 28px; font-weight: 400; cursor: pointer; font-size: 19px; color: inherit; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 2px solid rgb(255, 204, 0); background-image: linear-gradient(120deg, rgb(255, 204, 0), rgb(255, 204, 0)); background-repeat: no-repeat; background-size: 100% 0px; background-position: 0px 100%; transition: background-size 0.125s ease-in 0s; outline: 0px;'>stardust in mighty radiation-laden burps</a>.</p></header></header>
+	</div>
+</div>
+</body>
+</html>
