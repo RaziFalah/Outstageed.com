@@ -88,6 +88,7 @@ body {
   <div class="header-right">
   <a href="studio.php">Studio</a>
     <a href="user_logout.php">Logout</a>
+    <a href="settings.php">Settings</a>
   </div>
 </div>
 

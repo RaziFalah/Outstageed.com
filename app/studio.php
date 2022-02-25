@@ -21,13 +21,13 @@ include "header.php";
 echo'
 <body style="overflow: scroll;overflow-x: hidden;">
   <div class="wrapper">
-    <form class="form" action="../apis/post_api.php" method="post">
+    <form class="form" action="../apis/post_api.php" method="post" enctype="multipart/form-data">
       <div class="pageTitle title">Hushh, someone is telling truth!</div>
       <div  class="secondaryTitle title">Pick a title and design your mindset.</div>';
       ?>
       <input type="text" class="name formEntry" name="title"  placeholder="Title" pattern="[^'\x22]+" require/>
       <input type="text" class="name formEntry" name="Description"  placeholder="Description" pattern="[^'\x22]+" require/>
-      <input type="file" class="name formEntry" name="fileToUpload" id="fileToUpload">
+      <input type="file" class="name formEntry" name="photo" id="fileToUpload">
       <?php
       echo'
       <select style="color:black" class="option formEntry" name="option" require>
