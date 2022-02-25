@@ -3,7 +3,6 @@ $domain = "outstaged.com";
 include "db.php";
 include "auth_api.php";
 if(isset($_POST['submit'])) {
-
     $title =   $_POST['title'];
     $desc = $_POST['Description'];;
     $cat = $_POST['option'];
@@ -20,6 +19,10 @@ if(isset($_POST['submit'])) {
     $iltoken = substr($username, -1);
     $token = $intoken . $imtoken;
     $filename = $token;
+	$image=$_FILES['myfile'];
+
+
+	
 
     $sql = "INSERT INTO article (title, descr, keyword, category, content, reason, timed, username, hosted_pic, token, ifram) VALUES ('$title', '$desc', '$keyword', '$cat', 0, '$timed', '$timed', '$username', '$hosted_pic', '$token', '$token')";
 if(mysqli_query($con, $sql)){
@@ -30,6 +33,10 @@ if(mysqli_query($con, $sql)){
     #Active while running
     #header('Location: ../errors/sql_error.php');
 }
+
+
+
+
 
 
 mysqli_close($con);

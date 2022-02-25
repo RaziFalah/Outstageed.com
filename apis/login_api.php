@@ -14,6 +14,7 @@
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['username'] = $username;
+            $_SESSION['bio'] = $row['bio'];
             // Redirect to user dashboard page
             header("Location: app");
         } else {
