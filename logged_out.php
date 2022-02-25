@@ -1,4 +1,7 @@
 <?php
+$who = $_COOKIE['last_user'];
+?>
+<?php
 
 
 
@@ -63,10 +66,8 @@ body, html {
 
 			<div class="col-md-offset-2 col-md-8 col-sm-12">
 				<div class="home-thumb">
-					<h1 class="wow fadeInUp" data-wow-delay="0.4s">Hello, we are Outstageed.com</h1>
-          			<h3 class="wow fadeInUp" data-wow-delay="0.6s">Come on flok! let's think </strong> togother</h3>
-          			<a href="info.php" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="0.8s">More info</a>
-        			<a href="signup.php" class="btn btn-lg btn-success smoothScroll wow fadeInUp" data-wow-delay="0.8s">Sign Up!</a>
+					<h1 class="wow fadeInUp" data-wow-delay="0.4s">Thank you for spending time with us, <?php echo $who; ?>.<br>We logged you out as requested for now</h1>
+        			<a href="relogin.php" class="btn btn-lg btn-success smoothScroll wow fadeInUp" data-wow-delay="0.8s">Relogin!</a>
 				</div>
 			</div>
 
@@ -82,7 +83,6 @@ body, html {
 }
 </style>
 <body>
-
 
 
 <center>

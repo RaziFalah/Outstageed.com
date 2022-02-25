@@ -22,6 +22,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="jobs/css/bootstrap.min.css">
+<link rel="stylesheet" href="jobs/css/animate.min.css">
+<link rel="stylesheet" href="jobs/css/et-line-font.css">
+<link rel="stylesheet" href="jobs/css/font-awesome.min.css">
+<link rel="stylesheet" href="jobs/css/vegas.min.css">
+<link rel="stylesheet" href="jobs/css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
+<script src="jobs/js/jquery.js"></script>
+<script src="jobs/js/bootstrap.min.js"></script>
+
+<script src="jobs/js/vegas.min.js"></script>
+
+<script src="jobs/js/wow.min.js"></script>
+<script src="jobs/js/smoothscroll.js"></script>
+<script src="jobs/js/custom.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box;}
@@ -84,7 +99,7 @@ body {
 <body>
 
 <div class="header">
-  <a href="#default" class="logo">Outstageed.com</a>
+  <a href="" class="logo">Outstageed.com</a>
   <div class="header-right">
     <a href="login.php">login</a>
     <a href="contact.php">Contact</a>
