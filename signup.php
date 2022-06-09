@@ -16,6 +16,7 @@
             <h2 class="sr-only">Signup Form</h2>
             <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
             <div class="form-group"><input class="form-control" type="name" name="username" placeholder="username"></div>
+            <div class="form-group"><input class="form-control" type="name" name="fullname" placeholder="Full Name"></div>
             <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email Address"></div>
             <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
             <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Signup</button></div><a href="login.php" class="forgot">Member? login now</a></form>

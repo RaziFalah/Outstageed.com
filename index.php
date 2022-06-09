@@ -55,7 +55,11 @@ body, html {
 }
 </style>
 
+<?php
 
+include "apis/health_check_api.php";
+
+?>
 
 <section id="home">
 	<div class="container">

@@ -3,6 +3,9 @@ $who = $_COOKIE['last_user'];
 ?>
 <?php
 
+if(!isset($_COOKIE['last_user'])) {
+  header("Location: index.php");
+}
 
 
 
