@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outstageed LTD | by test</title>
+    <meta name="Description" CONTENT="Author: test. Author, Illustrator: P. Picture, Category: General-Science, Length: 1 pages">
+    <meta property="og:title" content="Outstageed LTD" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="test2022-02-25145009.png" />
+</head>
+<body>
+    
+
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+ *, ::before, ::after {
+	 padding: 0;
+	 margin: 0;
+	 box-sizing: border-box;
+}
+ body {
+     overflow-x: hidden;
+	 width: 100%;
+	 height: 100%;
+	 background-color: white;
+	 display: grid;
+	 place-items: center;
+}
+ h1, h2, h3, h4, h5, h6 {
+	 font-family: "Audiowide", sans-serif;
+	 letter-spacing: 0.1em;
+}
+ h2 {
+	 color: white;
+	 text-shadow: 0 0 0.5em #4deeea, 0 0 1em white;
+	 padding: 1em 0 0.5em 0;
+}
+ figure {
+	 display: flex;
+	 position: relative;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 margin: 1em 0;
+}
+ figure img {
+	 object-fit: contain;
+	 width: 100%;
+	 max-width: 400px;
+	 height: auto;
+	 border-radius: 0 0.5em 0.5em 0;
+	 box-shadow: -0.5em 0.5em 0 #74ee15;
+}
+ figure figcaption {
+	 position: absolute;
+	 font-family: "Open Sans", sans-serif;
+	 padding: 0.4em;
+	 font-size: 0.8rem;
+	 color: black;
+	 font-weight: bold;
+	 background-color: #ffe700;
+	 border-radius: 0.5em;
+	 bottom: -1em;
+}
+ p {
+	 font-family: "Open Sans", sans-serif;
+	 line-height: 2em;
+	 padding: 0.5em 0;
+}
+ .main {
+	 color: #fff;
+	 position: relative;
+	 max-width: 800px;
+}
+ @media screen and (min-width: 800px) {
+	 .main {
+		 border-left: 0.1em solid white;
+	}
+}
+ .head {
+	 position: relative;
+	 padding: 1.5em;
+	 margin-bottom: 1em;
+	/*background: linear-gradient( 0deg, rgba(16, 27, 55, 1) 32%, rgba(0, 0, 0, 1) 100% );
+	*/
+}
+ .headline {
+	 position: relative;
+	 font-size: 2.5rem;
+	 color: black;
+	 text-shadow: 0 0 0.5em #4deeea, 0 0 1em white;
+	 border-top: 0.6rem solid #4deeea;
+	 border-right: 0.6rem solid #74ee15;
+	 border-bottom: 0.6rem solid magenta;
+	 border-radius: 0 1rem 1rem 0;
+	 padding: 0.8em 0em;
+	 text-transform: uppercase;
+}
+ .headline::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 top: -1.05rem;
+	 left: -0.25rem;
+}
+ .subhead {
+	 position: relative;
+	 margin-bottom: 1em;
+	 text-shadow: none;
+	 color: black;
+	 padding: 1em;
+	 border-left: 0.6rem solid #ffe700;
+	 font-family: "Open Sans", sans-serif;
+}
+ .subhead::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #ffe700;
+	 bottom: -0.35rem;
+	 left: -1.05rem;
+}
+ .article-meta {
+	 display: grid;
+	 flex-direction: column;
+}
+ .author {
+	 position: relative;
+	 display: flex;
+	 align-items: center;
+	 padding: 1em;
+	 border-left: 0.6rem solid #001eff;
+}
+ .author::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #001eff;
+	 top: -0.7rem;
+	 left: -1.05rem;
+}
+ .author::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #001eff;
+	 bottom: -0.7em;
+	 left: -1.05em;
+}
+ .author__info {
+	 display: flex;
+	 flex-direction: column;
+	 margin-left: 1em;
+}
+ .author__info p {
+	 padding: 0;
+}
+ .byline {
+	 font-weight: bold;
+     color: black;
+}
+ .article-tags {
+	 margin-top: 2em;
+	 padding: 0;
+}
+ .article-tags span {
+	 padding: 0.5em 1em;
+	 background-color: black;
+	 border-radius: 1em;
+}
+ .content {
+	 padding: 1em 1.5em;
+	 justify-self: center;
+}
+ aside {
+	 position: relative;
+	 font-style: italic;
+	 color: white;
+	 margin: 1.5em 0;
+	 padding-left: 1em;
+	 border-left: 0.6rem solid #4deeea;
+	 text-align: left;
+}
+ aside::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 top: -0.7rem;
+	 left: -1.05rem;
+}
+ aside::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 bottom: -0.7em;
+	 left: -1.05em;
+}
+</style>
+ 
+
+<div class="main">
+	<div class="head">
+		<h1 class="headline">Outstageed LTD</h1>
+		<h2 class="subhead">
+			
+		</h2>
+		<div class="article-meta">
+			<div class="author">
+				<svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+					<title id="avatarTitle">Author Avatar</title>
+					<desc id="avatarDesc">
+						A cartoon avatar of a smiling purple square on a blue
+						background.
+					</desc>
+					<mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+						<rect width="36" height="36" rx="72" fill="white"></rect>
+					</mask>
+					<g mask="url(#mask__beam)">
+						<rect width="36" height="36" fill="#0ebeff"></rect>
+						<rect x="0" y="0" width="36" height="36" transform="translate(6 6) rotate(192 18 18) scale(1)" fill="#754cac" rx="6"></rect>
+						<g transform="translate(0 2) rotate(-2 18 18)">
+							<path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+							<rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+							<rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+						</g>
+					</g>
+				</svg>
+				<div class="author__info">
+					<p class="byline">By: test</p>
+					<p class="dateline" style="color:black;">Posted in: 2022/02/25</p>
+				</div>
+			</div>
+			<p class="article-tags">
+				<span class="tag">General-Science</span>
+			</p>
+		</div>
+	</div>
+	<div class="content">
+		<div align="left" dir="ltr" id="isPasted" style="margin-left:0pt;"><table style="border:none;border-collapse:collapse;"><tbody><tr style="height:80pt;"><td style="vertical-align:top;padding:7.2pt 7.2pt 7.2pt 7.2pt;overflow:hidden;overflow-wrap:break-word;"><p dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:0pt;margin-bottom:6pt;"><span style="font-size:36pt;font-family:Merriweather,serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Outstageed LTD</span></p><p dir="ltr" style="line-height:1.38;margin-right: 15pt;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Together, we are improving | Volunteering at outstageed.com</span></p></td><td style="vertical-align:top;padding:7.2pt 7.2pt 7.2pt 7.2pt;overflow:hidden;overflow-wrap:break-word;"><p dir="ltr" style="line-height:1.38;margin-right: 15pt;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;"><span style="border:none;display:inline-block;overflow:hidden;width:53px;height:53px;"><img src="blob:http://localhost/d91fd01e-f042-4af0-bede-743323ec38fa" width="53" height="53" class="fr-fic fr-dii"></span></span></p><p dir="ltr" style="line-height:1.38;margin-right: 15pt;text-align: center;margin-top:0pt;margin-bottom:0pt;"><a href="mailto:Affairs@itssss.me" style="text-decoration:none;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#1155cc;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Affairs@itssss.me</span></a></p><p dir="ltr" style="line-height:1.38;margin-right: 15pt;text-align: center;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">i@razifalah.com</span></p></td></tr><tr style="height:588pt;"><td style="vertical-align:top;padding:7.2pt 7.2pt 7.2pt 7.2pt;overflow:hidden;overflow-wrap:break-word;"><h1 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:30pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#2079c7;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Curriculum of general knowledge</span></h1><h2 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Merriweather,serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Basics of web development</span></h2><h3 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:5pt;margin-bottom:5pt;"><a href="https://www.youtube.com/watch?v=Q33KBiDriJY" style="text-decoration:none;"><span style="font-size:8pt;font-family:'Open Sans',sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click to watch 10 H course</span></a></h3><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">You will need how websites work, and know what backend and frontend development is.</span></p><h2 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Merriweather,serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Basics of networking</span></h2><h3 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:5pt;margin-bottom:5pt;"><a href="https://www.youtube.com/watch?v=qiQR5rTSshw" style="text-decoration:none;"><span style="font-size:8pt;font-family:'Open Sans',sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click to watch 10 H course</span></a></h3><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">You will need to know servers types, addressing &nbsp;and how does the internet works</span></p><h2 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Merriweather,serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Knowledge in Gits and github</span></h2><h3 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:5pt;margin-bottom:5pt;"><a href="https://www.youtube.com/watch?v=RGOj5yH7evk" style="text-decoration:none;"><span style="font-size:8pt;font-family:'Open Sans',sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click to watch 1 H course</span></a></h3><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Since our organization uses github for communication purposes and other purposes you will need to know how all of this stuff works.</span></p><h2 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Merriweather,serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Programming concepts&nbsp;</span></h2><h3 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:5pt;margin-bottom:5pt;"><a href="https://www.youtube.com/watch?v=zOjov-2OZ0E" style="text-decoration:none;"><span style="font-size:8pt;font-family:'Open Sans',sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click to watch 1.5 H course</span></a></h3><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">What is an api? &nbsp;gui? and more&hellip;</span></p><h1 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:30pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#2079c7;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Curriculum of programming</span></h1><h2 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Merriweather,serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Well-knowing in php or python</span></h2><h3 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:5pt;margin-bottom:5pt;"><a href="https://www.youtube.com/watch?v=OK_JCtrrv-c" style="text-decoration:none;"><span style="font-size:8pt;font-family:'Open Sans',sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click to watch PHP course</span></a><span style="font-size:8pt;font-family:'Open Sans',sans-serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;|</span><a href="https://www.youtube.com/watch?v=rfscVS0vtbw&t=15s" style="text-decoration:none;"><span style="font-size:8pt;font-family:'Open Sans',sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click to watch Python course</span></a></h3><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">We use php and python to run our backend service and apis, so it&rsquo;s important to know what we are talking about</span></p><h2 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Merriweather,serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">HTML and CSS (super easy to learn)</span></h2><h3 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:5pt;margin-bottom:5pt;"><a href="https://www.youtube.com/watch?v=mU6anWqZJcc" style="text-decoration:none;"><span style="font-size:8pt;font-family:'Open Sans',sans-serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click to watch 11 H course HTML and Css (zero to hero course)</span></a></h3><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam.</span></p></td><td style="vertical-align:top;padding:7.2pt 7.2pt 7.2pt 7.2pt;overflow:hidden;overflow-wrap:break-word;"><h1 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:30pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#2079c7;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Trusted schools</span></h1><ul style="margin-top:0;margin-bottom:0;padding-inline-start:48px;"><li dir="ltr" style="list-style-type:disc;font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: -18pt;"><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><a href="https://www.freecodecamp.org/" style="text-decoration:none;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">freecodecamp.org</span></a></p></li><li dir="ltr" style="list-style-type:disc;font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: -18pt;"><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><a href="http://w3schools.com" style="text-decoration:none;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">W3schools.com</span></a></p></li><li dir="ltr" style="list-style-type:disc;font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;margin-left: -18pt;"><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><a href="https://www.youtube.com/channel/UCQYMhOMi_Cdj1CEAU-fv80A" style="text-decoration:none;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Neso academy</span></a></p></li></ul><h1 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:30pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#2079c7;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Just you know</span></h1><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Our goal is not financial!</span></p><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:6pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Our goal is to have fame and use it in the right way by powering up humans&#39; minds and letting the world be thirsty for education again!</span></p><h1 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:30pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#2079c7;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Current work</span></h1><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><a href="https://github.com/Outstageed" style="text-decoration:none;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click me</span></a><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&nbsp;to see the current contribution and development status.</span></p><h1 dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:30pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#2079c7;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Contact us</span></h1><br><p dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:0pt;margin-bottom:0pt;"><a href="https://razifalah.github.io/Outstageed.com/#contact" style="text-decoration:none;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#1155cc;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Click for the contact form</span></a></p><p dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Mail 1:&nbsp;</span><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Affairs@itssss.me</span></p><p dir="ltr" style="line-height:1.2;margin-right: 15pt;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Mail 2:&nbsp;</span><span style="font-size:9pt;font-family:'Open Sans',sans-serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">i@razifalah.com</span></p><br><br><p dir="ltr" style="line-height:1.56;margin-right: 15pt;margin-top:16pt;margin-bottom:0pt;"><span style="font-size:9pt;font-family:Merriweather,serif;color:#666666;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">All right reserved outstageed.com 2022&nbsp;</span><span style="font-size:10.5pt;font-family:Arial;color:#666666;background-color:#ffffff;font-weight:400;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&copy;</span></p><br><br></td></tr></tbody></table></div>
+	</div>
+</div>
+</body>
+</html>

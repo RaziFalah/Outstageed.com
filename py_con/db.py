@@ -13,5 +13,4 @@ mycursor.execute(f"SELECT username FROM users Where id={id}")
 
 myresult = mycursor.fetchall()
 
-for x in myresult:
-  print(x)
+print(list(myresult))

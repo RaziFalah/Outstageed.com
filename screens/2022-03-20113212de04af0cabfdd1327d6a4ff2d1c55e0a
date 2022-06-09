@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | by test</title>
+    <meta name="Description" CONTENT="Author: test. Author, Illustrator: P. Picture, Category: General-Science, Length: 1 pages">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="test2022-03-20113212.png" />
+</head>
+<body>
+    
+
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+ *, ::before, ::after {
+	 padding: 0;
+	 margin: 0;
+	 box-sizing: border-box;
+}
+ body {
+     overflow-x: hidden;
+	 width: 100%;
+	 height: 100%;
+	 background-color: white;
+	 display: grid;
+	 place-items: center;
+}
+ h1, h2, h3, h4, h5, h6 {
+	 font-family: "Audiowide", sans-serif;
+	 letter-spacing: 0.1em;
+}
+ h2 {
+	 color: white;
+	 text-shadow: 0 0 0.5em #4deeea, 0 0 1em white;
+	 padding: 1em 0 0.5em 0;
+}
+ figure {
+	 display: flex;
+	 position: relative;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 margin: 1em 0;
+}
+ figure img {
+	 object-fit: contain;
+	 width: 100%;
+	 max-width: 400px;
+	 height: auto;
+	 border-radius: 0 0.5em 0.5em 0;
+	 box-shadow: -0.5em 0.5em 0 #74ee15;
+}
+ figure figcaption {
+	 position: absolute;
+	 font-family: "Open Sans", sans-serif;
+	 padding: 0.4em;
+	 font-size: 0.8rem;
+	 color: black;
+	 font-weight: bold;
+	 background-color: #ffe700;
+	 border-radius: 0.5em;
+	 bottom: -1em;
+}
+ p {
+	 font-family: "Open Sans", sans-serif;
+	 line-height: 2em;
+	 padding: 0.5em 0;
+}
+ .main {
+	 color: #fff;
+	 position: relative;
+	 max-width: 800px;
+}
+ @media screen and (min-width: 800px) {
+	 .main {
+		 border-left: 0.1em solid white;
+	}
+}
+ .head {
+	 position: relative;
+	 padding: 1.5em;
+	 margin-bottom: 1em;
+	/*background: linear-gradient( 0deg, rgba(16, 27, 55, 1) 32%, rgba(0, 0, 0, 1) 100% );
+	*/
+}
+ .headline {
+	 position: relative;
+	 font-size: 2.5rem;
+	 color: black;
+	 text-shadow: 0 0 0.5em #4deeea, 0 0 1em white;
+	 border-top: 0.6rem solid #4deeea;
+	 border-right: 0.6rem solid #74ee15;
+	 border-bottom: 0.6rem solid magenta;
+	 border-radius: 0 1rem 1rem 0;
+	 padding: 0.8em 0em;
+	 text-transform: uppercase;
+}
+ .headline::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 top: -1.05rem;
+	 left: -0.25rem;
+}
+ .subhead {
+	 position: relative;
+	 margin-bottom: 1em;
+	 text-shadow: none;
+	 color: black;
+	 padding: 1em;
+	 border-left: 0.6rem solid #ffe700;
+	 font-family: "Open Sans", sans-serif;
+}
+ .subhead::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #ffe700;
+	 bottom: -0.35rem;
+	 left: -1.05rem;
+}
+ .article-meta {
+	 display: grid;
+	 flex-direction: column;
+}
+ .author {
+	 position: relative;
+	 display: flex;
+	 align-items: center;
+	 padding: 1em;
+	 border-left: 0.6rem solid #001eff;
+}
+ .author::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #001eff;
+	 top: -0.7rem;
+	 left: -1.05rem;
+}
+ .author::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #001eff;
+	 bottom: -0.7em;
+	 left: -1.05em;
+}
+ .author__info {
+	 display: flex;
+	 flex-direction: column;
+	 margin-left: 1em;
+}
+ .author__info p {
+	 padding: 0;
+}
+ .byline {
+	 font-weight: bold;
+     color: black;
+}
+ .article-tags {
+	 margin-top: 2em;
+	 padding: 0;
+}
+ .article-tags span {
+	 padding: 0.5em 1em;
+	 background-color: black;
+	 border-radius: 1em;
+}
+ .content {
+	 padding: 1em 1.5em;
+	 justify-self: center;
+}
+ aside {
+	 position: relative;
+	 font-style: italic;
+	 color: white;
+	 margin: 1.5em 0;
+	 padding-left: 1em;
+	 border-left: 0.6rem solid #4deeea;
+	 text-align: left;
+}
+ aside::before {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 top: -0.7rem;
+	 left: -1.05rem;
+}
+ aside::after {
+	 content: "";
+	 width: 1.5rem;
+	 height: 1.5rem;
+	 border-radius: 50%;
+	 position: absolute;
+	 background-color: #4deeea;
+	 bottom: -0.7em;
+	 left: -1.05em;
+}
+</style>
+ 
+
+<div class="main">
+	<div class="head">
+		<h1 class="headline"></h1>
+		<h2 class="subhead">
+			
+		</h2>
+		<div class="article-meta">
+			<div class="author">
+				<svg id="author-avatar" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+					<title id="avatarTitle">Author Avatar</title>
+					<desc id="avatarDesc">
+						A cartoon avatar of a smiling purple square on a blue
+						background.
+					</desc>
+					<mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+						<rect width="36" height="36" rx="72" fill="white"></rect>
+					</mask>
+					<g mask="url(#mask__beam)">
+						<rect width="36" height="36" fill="#0ebeff"></rect>
+						<rect x="0" y="0" width="36" height="36" transform="translate(6 6) rotate(192 18 18) scale(1)" fill="#754cac" rx="6"></rect>
+						<g transform="translate(0 2) rotate(-2 18 18)">
+							<path d="M13,19 a1,0.75 0 0,0 10,0" fill="white"></path>
+							<rect x="12" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+							<rect x="22" y="14" width="1.5" height="2" rx="1" stroke="none" fill="white"></rect>
+						</g>
+					</g>
+				</svg>
+				<div class="author__info">
+					<p class="byline">By: test</p>
+					<p class="dateline" style="color:black;">Posted in: 2022/03/20</p>
+				</div>
+			</div>
+			<p class="article-tags">
+				<span class="tag">General-Science</span>
+			</p>
+		</div>
+	</div>
+	<div class="content">
+		<p>&lt;div id=&quot;scroller&quot;&gt;&lt;div id=&quot;sizer&quot; style=&quot;display: block; width: 1290px; height: 11740px;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;content&quot;&gt;&lt;embed id=&quot;plugin&quot; type=&quot;application/x-google-chrome-pdf&quot; original-url=&quot;file:///C:/Users/azs17/Desktop/Temp/%D7%A1%D7%93%D7%A0%D7%94%20%D7%91%D7%A7%D7%9C%D7%A3%20%D7%A9%D7%94%D7%99%D7%A8%D7%94%20%D7%95%20%D7%A2%D7%91%D7%99%D7%A8%20(3).pdf&quot; src=&quot;chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/68ff3c80-db10-4fc9-ab73-e886080f1ed0&quot; background-color=&quot;4283586137&quot; javascript=&quot;allow&quot; full-frame=&quot;&quot; pdf-viewer-update-enabled=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;</p>
+	</div>
+</div>
+</body>
+</html>
