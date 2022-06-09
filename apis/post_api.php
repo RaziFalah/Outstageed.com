@@ -1,6 +1,7 @@
 <?php
 $domain = "outstaged.com";
 include "db.php";
+
 include "auth_api.php";
 if(isset($_POST['submit'])) {
     $title =   $_POST['title'];
@@ -9,7 +10,7 @@ if(isset($_POST['submit'])) {
     $content = $_POST['content'];
     mysqli_real_escape_string($con, $content);
     $keyword = $_POST['option'];
-    $username = $_SESSION["username"];
+    $username = $_SESSION["id"];
     $timed = date("Y/m/d");
     $hosted_time = date('Y-m-dHis');
     $hosted_pic = $username . $hosted_time . ".png";

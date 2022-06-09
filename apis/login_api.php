@@ -1,21 +1,66 @@
 <?php
+
+
+
     require('db.php');
     session_start();
-    // When form submitted, check and create user session.
     if (isset($_POST['username'])) {
-        $username = stripslashes($_REQUEST['username']);    // removes backslashes
+        $username = stripslashes($_REQUEST['username']);
         $username = mysqli_real_escape_string($con, $username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
-        // Check user is exist in the database
         $query    = "SELECT * FROM `users` WHERE username='$username'
                      AND password='" . md5($password) . "'";
         $result = mysqli_query($con, $query) or die(mysql_error());
         $rows = mysqli_num_rows($result);
+
+
+        $dbhost = 'localhost';
+        $dbuser = 'root';
+        $dbpass = '';
+        $dbname = 'system';
+        $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+        $file_event = fopen("feedback/".date("d_m_y_s").".feedback", "w") or die("Unable to open file!");
+        $error_feedback = "Connection successed, login_api.php [ERROR]\n";
+        fwrite($file_event, $error_feedback);
+        fclose($file_event);
+        
+        $sqlb = "SELECT * FROM users WHERE username='".$username."'";
+        
+        
+        $resultb = $mysqli->query($sqlb);
+          
+        if ($resultb->num_rows > 0) {
+           while($rowb = $resultb->fetch_assoc()) {
+              $_SESSION['id'] = $rowb['id'];
+              $_SESSION['email'] = $rowb['email'];
+              $_SESSION['password'] = $rowb['password'];
+              $_SESSION['create_datetime'] = $rowb['create_datetime'];
+              $_SESSION['bio'] = $rowb['bio'];
+              $_SESSION['url'] = $rowb['url'];
+              $_SESSION['Location'] = $rowb['Location'];
+              $_SESSION['full_name'] = $rowb['full_name'];
+              $_SESSION['vul_mail'] = $rowb['vul_mail'];
+              $_SESSION['vul_sum'] = $rowb['vul_sum'];
+              $_SESSION['mail_not'] = $rowb['mail_not'];
+              $login_count = $rowb['login_count'];
+           }
+        } else {
+            $file_event = fopen("feedback/".date("d_m_y_s").".feedback", "w") or die("Unable to open file!");
+            $error_feedback = "SERVER ERROR, login_api.php [ERROR]\n";
+            fwrite($file_event, $error_feedback);
+            fclose($file_event);
+        }
+        mysqli_free_result($resultb);
+
+
+
         if ($rows == 1) {
             $_SESSION['username'] = $username;
-            $_SESSION['bio'] = $row['bio'];
-            // Redirect to user dashboard page
+            $new_login_count = $login_count + 1;
+            $update = "UPDATE users SET login_count = ".$new_login_count." WHERE id=".$_SESSION['id']."";
+            $_SESSION['login_count'] = $new_login_count;
+            mysqli_query($con, $update);
             header("Location: app");
         } else {
             echo '<!DOCTYPE html>
@@ -215,4 +260,5 @@ transform:translateY(1px);
 
 </style>';
     }
+    $mysqli -> close()
 ?>

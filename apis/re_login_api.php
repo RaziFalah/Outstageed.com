@@ -16,7 +16,47 @@ if(!isset($_SESSION["username"])) {
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['username'] = $username;
-            // Redirect to user dashboard page
+           
+            
+            $dbhost = 'localhost';
+            $dbuser = 'root';
+            $dbpass = '';
+            $dbname = 'system';
+            $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+            printf('Connected successfully.<br />');
+            
+            $sqlb = "SELECT * FROM users WHERE username='".$username."'";
+            
+            $resultb = $mysqli->query($sqlb);
+              
+            if ($resultb->num_rows > 0) {
+               while($rowb = $resultb->fetch_assoc()) {
+                  $_SESSION['id'] = $rowb['id'];
+                  $_SESSION['email'] = $rowb['email'];
+                  $_SESSION['password'] = $rowb['password'];
+                  $_SESSION['create_datetime'] = $rowb['create_datetime'];
+                  $_SESSION['bio'] = $rowb['bio'];
+                  $_SESSION['url'] = $rowb['url'];
+                  $_SESSION['Location'] = $rowb['Location'];
+                  $_SESSION['full_name'] = $rowb['full_name'];
+                  $_SESSION['vul_mail'] = $rowb['vul_mail'];
+                  $_SESSION['vul_sum'] = $rowb['vul_sum'];
+                  $_SESSION['mail_not'] = $rowb['mail_not'];  
+                  $login_count = $rowb['login_count'];   
+               }
+            } else {
+               printf('Something went wrong at our end, Please contact support and inform the issue.<br />');
+            }
+            mysqli_free_result($resultb);
+
+
+
+
+            $_SESSION['username'] = $username;
+            $new_login_count = $login_count + 1;
+            $update = "UPDATE users SET login_count = ".$new_login_count." WHERE id=".$_SESSION['id']."";
+            $_SESSION['login_count'] = $login_count;
+            mysqli_query($con, $update);
             header("Location: app");
         } else {
             echo '<!DOCTYPE html>

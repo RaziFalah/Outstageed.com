@@ -18,10 +18,14 @@ include "connection.php";
 $im = "SELECT * FROM article ORDER BY RAND() limit 10000" ;
 $records = mysqli_query($con,$im);
 
+
+
 start:
 $i=0;
 while($result = mysqli_fetch_assoc($records)){
     $content =  mb_strimwidth($result['content'], 0, 30, "...");
+	$ind = $result['username'];
+
 echo'
 
 
@@ -197,7 +201,7 @@ echo'
 <div class="card-title">
   <h2>
   <a href="view.php?id='.$result['id'].'">'.$result['title'].'</a>
-      <small>By '.$result['username'].'</small>
+      <small><a href="username.php?id='.$ind.'">View author profile</a> </small>
   </h2>
 </div>
 <div class="card-flap flap1">
@@ -206,7 +210,7 @@ echo'
   </div>
   <div class="card-flap flap2">
     <div class="card-actions">
-      <a href="view.php?id='.$result['id'].'" class="btn">Read more</a>
+      <a href="view.php?id='.$ind.'" class="btn">Read more</a>
     </div>
   </div>
 </div>
@@ -220,14 +224,38 @@ echo'
 
 ';
 
+
+
+
+
 if ($i==4) {
 
     goto start; 
   }
   $i++;
 }
-?>
 
+
+
+
+
+
+
+?>
+<noscript>
+<meta http-equiv="Refresh" content="0; url='<?php include "domain.php"; ?>/errors/nojs.php'" />
+</noscript>
+<script>
+  console.log("Javascript is enabled [Good]");
+</script>
+<script>
+  if(navigator.cookieEnabled) {
+    console.log("cookies are enabled [Good]")
+}
+else {
+	window.location.href = "<?php include "domain.php"; ?>/errors/nocookies.php";
+}
+</script>
          <style>
              
 

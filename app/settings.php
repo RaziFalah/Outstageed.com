@@ -2,10 +2,24 @@
 include "connection.php";
 include "../apis/auth_api.php";
 include "header.php";
+require "../apis/update_data_api.php";
 $un = $_SESSION['username'];
 setcookie("last_user", $un, time() + (2.628e+6 * 30), "/");
 
+if(!isset($_COOKIE["Error_feedback"])) {
+  echo "";
+} else {
+   include "../snackbars/username_inchange.html";
+   setcookie('Error_feedback', null, -1, '/'); 
+}
 
+
+if(!isset($_COOKIE["PROFILE1_FEEDBACK"])) {
+  echo "";
+} else {
+   include "../snackbars/inserted.html";
+   setcookie('PROFILE1_FEEDBACK', null, -1, '/'); 
+}
 echo '
 
 
@@ -72,57 +86,67 @@ echo '
               <div class="tab-pane active" id="profile">
                 <h6>YOUR PROFILE INFORMATION</h6>
                 <hr>
-                <form>
+                <form action="../apis/settings/profile1.php" method="post">
                   <div class="form-group">
-                    <label for="fullName">Username</label>
-                    <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your Username" value="'.$_SESSION['username'].'">
-                    <small id="fullNameHelp" class="form-text text-muted">You username is a public lable that appers as a lable on the articles you post.</small>
+                    <label for="fullName">Full name</label>
+                    <input name="fullname" type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your Username" value="'.$_SESSION['full_name'].'">
+                    <small id="fullNameHelp" class="form-text text-muted">You fullname is a public lable that may appers on your profile.</small>
                   </div>
                   <div class="form-group">
                     <label for="bio">Your Bio</label>
-                    <textarea class="form-control autosize" id="bio" placeholder="Write something about you" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px;">'.$_SESSION['bio'].'</textarea>
+                    <textarea name="bio" class="form-control autosize" id="bio" placeholder="Write something about you" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px;">'.$_SESSION['bio'].'</textarea>
                   </div>
                   <div class="form-group">
                     <label for="url">URL</label>
-                    <input type="text" class="form-control" id="url" placeholder="Enter your website address" value="http://benije.ke/pozzivkij">
+                    <input name="custom_website" type="text" class="form-control" id="url" placeholder="Enter your website address" value="'.$_SESSION['url'].'">
                   </div>
                   <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" class="form-control" id="location" placeholder="Enter your location" value="Bay Area, San Francisco, CA">
+                    <input name="adr" type="text" class="form-control" id="location" placeholder="Enter your location" value="'.$_SESSION['Location'].'">
                   </div>
                   <div class="form-group small text-muted">
                     All of the fields on this page are optional and can be deleted at any time, and by filling them out, you are giving us consent to share this data wherever your user profile appears.
                   </div>
-                  <button type="button" class="btn btn-primary">Update Profile</button>
+                  <input type="hidden" value="'.$_SESSION['id'].'" name="id" readonly>
+                  <button name="submit" type="submit" class="btn btn-primary">Update Profile</button>
                   <button type="reset" class="btn btn-light">Reset Changes</button>
                 </form>
               </div>
               <div class="tab-pane" id="account">
                 <h6>ACCOUNT SETTINGS</h6>
                 <hr>
-                <form>
+                <form action="../apis/settings/profile2.php" method="post">
                   <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter your username" value="kennethvaldez">
-                    <small id="usernameHelp" class="form-text text-muted">After changing your username, your old username becomes available for anyone else to claim.</small>
-                  </div>
+                    <input name="username" type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter your username" value="'.$_SESSION['username'].'">
+                    <small id="usernameHelp" class="form-text text-muted">You can change your username whenever you like ,but after changing your username, your old username becomes available for anyone else to claim.</small>
+                    <input type="hidden" value="'.$_SESSION['id'].'" name="id" readonly>
+                    <br><button name="submit" type="submit" class="btn btn-primary">Update username</button>
+                  </div> ';
+
+
+
+                  echo'
                   <hr>
+                  </form>
                   <div class="form-group">
                     <label class="d-block text-danger">Delete Account</label>
                     <p class="text-muted font-size-sm">Once you delete your account, there is no going back. Please be certain.</p>
                   </div>
-                  <button class="btn btn-danger" type="button">Delete Account</button>
-                </form>
+                  <form action="../apis/delete_account_api.php" method="POST">
+                  <input name="status" type="hidden" value="legal">
+                  <button name="submit" class="btn btn-danger" type="submit">Delete Account</button>
+                  </form>
               </div>
               <div class="tab-pane" id="security">
                 <h6>SECURITY SETTINGS</h6>
                 <hr>
-                <form>
+                <form action="apis/change_password_api.php" method="post">
                   <div class="form-group">
                     <label class="d-block">Change Password</label>
-                    <input type="text" class="form-control" placeholder="Enter your old password">
-                    <input type="text" class="form-control mt-1" placeholder="New password">
-                    <input type="text" class="form-control mt-1" placeholder="Confirm new password">
+                    <input name="oldpass" type="password" class="form-control" placeholder="Enter your old password">
+                    <input name="firstpass" type="password" class="form-control mt-1" placeholder="New password">
+                    <input name="secondpass" type="password" class="form-control mt-1" placeholder="Confirm new password">
                   </div>
                 </form>
                 <hr>
@@ -167,12 +191,16 @@ echo '
                     </div>
                   </div>
                   <div class="form-group mb-0">
-                    <label class="d-block">SMS Notifications</label>
+                    <label class="d-block">Mail Notifications</label>
                     <ul class="list-group list-group-sm">
                       <li class="list-group-item has-icon">
+                      ';
+                      if($_SESSION['mail_not'] = 0){
+                        echo'
+                        
                         Comments
                         <div class="custom-control custom-control-nolabel custom-switch ml-auto">
-                          <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
                           <label class="custom-control-label" for="customSwitch1"></label>
                         </div>
                       </li>
@@ -186,14 +214,14 @@ echo '
                       <li class="list-group-item has-icon">
                         Reminders
                         <div class="custom-control custom-control-nolabel custom-switch ml-auto">
-                          <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch3">
                           <label class="custom-control-label" for="customSwitch3"></label>
                         </div>
                       </li>
                       <li class="list-group-item has-icon">
                         Events
                         <div class="custom-control custom-control-nolabel custom-switch ml-auto">
-                          <input type="checkbox" class="custom-control-input" id="customSwitch4" checked="">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch4">
                           <label class="custom-control-label" for="customSwitch4"></label>
                         </div>
                       </li>
@@ -207,6 +235,16 @@ echo '
                     </ul>
                   </div>
                 </form>
+                        
+                        ';
+                      } else {
+                        echo' Unkown action have been reqested |Error code: 67223| ';
+                      }
+
+
+
+
+                echo'
               </div>
               <div class="tab-pane" id="billing">
                 <h6>BILLING SETTINGS</h6>
@@ -289,7 +327,35 @@ echo '
 </html>
 
 ';
+if ($_SESSION['login_count'] == 1){
+  echo'<center><br><br>
+  
+  <form action="../apis/reassign_system_newuser_insperction_api.php" method="POST">
+  <input type="hidden" name="source" value="legal">
+  <button name="submit" class="block">Finish signup</button>
+  </form>
+  <style>
+.block {
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  background-color: #0565ff;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
 
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+  
+  <center>';
+}
 
 
 ?>
