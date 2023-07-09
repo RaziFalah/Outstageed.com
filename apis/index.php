@@ -1,7 +1,7 @@
 <?php
 
 
-echo "This is an api restricted site";
+echo "Illegal request; access was not granted";
 
 
 ?>

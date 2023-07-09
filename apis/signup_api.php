@@ -10,14 +10,14 @@
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
         $create_datetime = date("Y-m-d H:i:s");
-        $myfile = fopen("../users/$username", "w") or die("Server has rejected your command");
-        $txt = "Data 1:\n";
-        fwrite($myfile, $txt);
-        $txt = "Data 2:\n";
-        fwrite($myfile, $txt);
-        fclose($myfile);
-        $query    = "INSERT into `users` (username, password, email, create_datetime, bio, url, location, full_name)
-                     VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime', 'No bio yet!', 'Maybe https://$username.com', '', '$fullname')";
+        #$myfile = fopen(dirname(__FILE__) . "../users/$username", "w") or die("Server has issued rejection code!");
+        #$txt = "Data 1:\n";
+        #fwrite($myfile, $txt);
+        #$txt = "Data 2:\n";
+        #fwrite(dirname(__FILE__) .  $myfile, $txt);
+        #fclose($myfile);
+        $query    = "INSERT into `users` (username, password, email, create_datetime, location, full_name, login_count, image)
+                     VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime', '', '$fullname', 0, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABa4fAxcw8xAu5Ba8FIOe1DH5EGexptBiGOGTT8KU3Q&s')";
         $result   = mysqli_query($con, $query);
         if ($result) {
             header("location: ../login.php");
@@ -36,14 +36,14 @@
          
          <body>
              <div class="login-dark">
-                 <form class="form" action="apis/signup_api.php" method="post">
+                 <form class="form" action="" method="post">
                      <h2 class="sr-only">Signup Form</h2>
                      <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
                      <div class="form-group"><input class="form-control" type="name" name="username" placeholder="username"></div>
                      <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email Address"></div>
                      <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
-                     <p style="color:red">Something went wrong! That is all we know</p>
-                     <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Signup</button></div><a href="login.php" class="forgot">Member? login now</a></form>
+                     <p style="color:red">Unkown error, please try again or contact support.</p> '.mysqli_error($con).'
+                     <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Signup</button></div><a href="../login.php" class="forgot">Member? login now</a></form>
              </div>
              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
              <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
@@ -132,3 +132,4 @@
  } else {
      echo '<h1>Connection has been blocked!</h1>';
  }
+

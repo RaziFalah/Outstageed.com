@@ -18,12 +18,12 @@
         $dbhost = 'localhost';
         $dbuser = 'root';
         $dbpass = '';
-        $dbname = 'system';
+        $dbname = 'systema';
         $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-        $file_event = fopen("feedback/".date("d_m_y_s").".feedback", "w") or die("Unable to open file!");
-        $error_feedback = "Connection successed, login_api.php [ERROR]\n";
-        fwrite($file_event, $error_feedback);
-        fclose($file_event);
+        #$file_event = fopen(dirname(__FILE__) . "feedback/".date("d_m_y_s").".feedback", "w") or die("Server rejected to handover client's information!");
+        #$error_feedback = "Connection successed, login_api.php [ERROR]\n";
+        #fwrite($file_event, $error_feedback);
+        #fclose($file_event);
         
         $sqlb = "SELECT * FROM users WHERE username='".$username."'";
         
@@ -44,12 +44,13 @@
               $_SESSION['vul_sum'] = $rowb['vul_sum'];
               $_SESSION['mail_not'] = $rowb['mail_not'];
               $login_count = $rowb['login_count'];
+              $_SESSION['state'] = $rowb['state'];
            }
         } else {
-            $file_event = fopen("feedback/".date("d_m_y_s").".feedback", "w") or die("Unable to open file!");
-            $error_feedback = "SERVER ERROR, login_api.php [ERROR]\n";
-            fwrite($file_event, $error_feedback);
-            fclose($file_event);
+            #$file_event = fopen("feedback/".date("d_m_y_s").".feedback", "w") or die("Unable to open file!");
+            #$error_feedback = "SERVER ERROR, login_api.php [ERROR]\n";
+            #fwrite($file_event, $error_feedback);
+            #fclose($file_event);
         }
         mysqli_free_result($resultb);
 
@@ -81,7 +82,7 @@
                     <div class="form-group"><input class="form-control" type="username" name="username" placeholder="username"></div>
                     <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
                     <div class="form-group"><button class="btn btn-primary btn-block" name="submit">Log In</button></div><a href="signup.php" class="forgot">New? sign up now</a>
-                    <h4 style="color:red">incorecct password or username</h4></form>
+                    <h4 style="color:red">incorecct password or username </h4></form>
                     
                 </div>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

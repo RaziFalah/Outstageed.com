@@ -5,9 +5,9 @@ include "db.php";
 include "auth_api.php";
 if(isset($_POST['submit'])) {
     $status =   $_POST['status'];
-
+#DELETE FROM article WHERE username=".$_SESSION['id']."
     if ($status == "legal") {
-    $sql = "DELETE FROM users WHERE id=".$_SESSION['id']."";
+    $sql = "UPDATE users set state=11 WHERE id=".$_SESSION['id']." ";
 if(mysqli_query($con, $sql)){
     header('Location: ../apis/final_logout_api.php');
 } else{
@@ -17,7 +17,7 @@ if(mysqli_query($con, $sql)){
     header('Location: ../errors/sql_error.php');
 }
     } else {
-        echo"API SITE";
+        echo"Request could not be fullfilled, request method is illegal.";
     }
 
 

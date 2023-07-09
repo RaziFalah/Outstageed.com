@@ -21,7 +21,7 @@ if(!isset($_SESSION["username"])) {
             $dbhost = 'localhost';
             $dbuser = 'root';
             $dbpass = '';
-            $dbname = 'system';
+            $dbname = 'systema';
             $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
             printf('Connected successfully.<br />');
             

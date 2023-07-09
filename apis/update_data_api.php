@@ -4,7 +4,7 @@
 $dbhosta = 'localhost';
 $dbusera = 'root';
 $dbpassa = '';
-$dbnamea = 'system';
+$dbnamea = 'systema';
 $mysqli1 = new mysqli($dbhosta, $dbusera, $dbpassa, $dbnamea);
 printf('');
 
@@ -24,7 +24,8 @@ if ($resultb->num_rows > 0) {
       $_SESSION['full_name'] = $rowb['full_name'];
       $_SESSION['vul_mail'] = $rowb['vul_mail'];
       $_SESSION['vul_sum'] = $rowb['vul_sum'];
-      $_SESSION['mail_not'] = $rowb['mail_not'];     
+      $_SESSION['mail_not'] = $rowb['mail_not'];  
+      $_SESSION['state'] = $rowb['state'];
    }
 } else {
    printf('Something went wrong at our end, Please contact support and inform the issue.<br />');
