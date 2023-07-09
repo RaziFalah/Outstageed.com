@@ -12,6 +12,6 @@ Project is indevelopment by razifalah.com Team
 <h1>Screenshots and gifs</h1>
 
 <h3>Basic studio for posting articles</h3>
-![](https://github.com/RaziFalah/Outstageed.com/assets/92949627/430947bd-f71e-4fa2-ad77-1434ee3b43ee)
+[![](https://github.com/RaziFalah/Outstageed.com/assets/92949627/430947bd-f71e-4fa2-ad77-1434ee3b43ee)](https://im5.ezgif.com/tmp/ezgif-5-a750e6297b.gif)
 <p>You will also have the option to customize your own page with html, css and scripts might be possible.</p>
 
