@@ -16,12 +16,12 @@ Project is indevelopment by razifalah.com Team
 <p>You will also have the option to customize your own page with html, css and scripts might be possible.</p>
 
 <h3>Friendly sign up proccess</h3>
-![image2](https://github.com/RaziFalah/Outstageed.com/assets/92949627/b87934c8-5496-419e-b6cb-0a2525c30db9)
+![ScreenShot](https://github.com/RaziFalah/Outstageed.com/assets/92949627/b87934c8-5496-419e-b6cb-0a2525c30db9)
 <p>After signing up, you will be presented with this page on the first login in order to customize your public profile.</p>
 
 
 <h3>Feed page</h3>
-![image3](https://github.com/RaziFalah/Outstageed.com/assets/92949627/8504f5a0-f76a-4776-9696-1ebc657045de)
+![ScreenShot2](https://github.com/RaziFalah/Outstageed.com/assets/92949627/8504f5a0-f76a-4776-9696-1ebc657045de)
 <p>Please be aware this is a beta feed page for testing and will not be officially released</p>
 
 
