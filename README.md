@@ -12,16 +12,17 @@ Project is indevelopment by razifalah.com Team
 <h1>Screenshots and gifs</h1>
 
 <h3>Basic studio for posting articles</h3>
-![image](https://github.com/RaziFalah/Outstageed.com/blob/main/snaps/studio.gif)
+
+<img src="https://github.com/RaziFalah/Outstageed.com/blob/main/snaps/studio.gif" alt="Basic studio outstageed">
 <p>You will also have the option to customize your own page with html, css and scripts might be possible.</p>
 
 <h3>Friendly sign up proccess</h3>
-![ScreenShot](https://github.com/RaziFalah/Outstageed.com/assets/92949627/b87934c8-5496-419e-b6cb-0a2525c30db9)
+<img src="https://github.com/RaziFalah/Outstageed.com/assets/92949627/b87934c8-5496-419e-b6cb-0a2525c30db9" alt="friendly sign up proccess outstageed">
 <p>After signing up, you will be presented with this page on the first login in order to customize your public profile.</p>
 
 
 <h3>Feed page</h3>
-![ScreenShot2](https://github.com/RaziFalah/Outstageed.com/assets/92949627/8504f5a0-f76a-4776-9696-1ebc657045de)
+<img src="https://github.com/RaziFalah/Outstageed.com/assets/92949627/8504f5a0-f76a-4776-9696-1ebc657045de" alt="feed page outstageed">
 <p>Please be aware this is a beta feed page for testing and will not be officially released</p>
 
 
